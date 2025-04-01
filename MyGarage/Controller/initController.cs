@@ -16,8 +16,9 @@ namespace MyGarage.Controller
         UserControl initUserControl;
         public initController() {
 
-            initUserControl = new UserControl();
+            //initUserControl = new UserControl();
             initForm = new Form1();
+            loadData();
             setListeners();
             initForm.ShowDialog();
             
@@ -28,10 +29,12 @@ namespace MyGarage.Controller
 
         private void loadData()
         {
-
+            var inicioView = new initUserControl();
+            initForm.Text = "Inici";
+            CargarVista(initForm.iniciPage, inicioView);
         }
 
-
+ 
         private void setListeners()
         {
             initForm.DrawerTabControl.SelectedIndexChanged += canviPage;

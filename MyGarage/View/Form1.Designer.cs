@@ -52,45 +52,47 @@
             this.drawerMenu.Dock = System.Windows.Forms.DockStyle.Fill;
             this.drawerMenu.ImageList = this.imagenesDrawerMenu;
             this.drawerMenu.Location = new System.Drawing.Point(3, 64);
+            this.drawerMenu.Margin = new System.Windows.Forms.Padding(0);
             this.drawerMenu.MouseState = MaterialSkin.MouseState.HOVER;
             this.drawerMenu.Multiline = true;
             this.drawerMenu.Name = "drawerMenu";
+            this.drawerMenu.Padding = new System.Drawing.Point(0, 0);
             this.drawerMenu.SelectedIndex = 0;
             this.drawerMenu.Size = new System.Drawing.Size(1072, 683);
             this.drawerMenu.TabIndex = 0;
             // 
             // iniciPage
             // 
+            this.iniciPage.BackColor = System.Drawing.Color.DimGray;
             this.iniciPage.ImageKey = "home.jpg";
-            this.iniciPage.Location = new System.Drawing.Point(4, 31);
+            this.iniciPage.Location = new System.Drawing.Point(4, 39);
             this.iniciPage.Name = "iniciPage";
-            this.iniciPage.Padding = new System.Windows.Forms.Padding(3);
-            this.iniciPage.Size = new System.Drawing.Size(1064, 648);
+            this.iniciPage.Size = new System.Drawing.Size(1064, 640);
             this.iniciPage.TabIndex = 0;
             this.iniciPage.Text = "Inici";
-            this.iniciPage.UseVisualStyleBackColor = true;
             // 
             // clientsPage
             // 
+            this.clientsPage.BackColor = System.Drawing.Color.DimGray;
             this.clientsPage.ImageKey = "client.png";
-            this.clientsPage.Location = new System.Drawing.Point(4, 31);
+            this.clientsPage.Location = new System.Drawing.Point(4, 39);
             this.clientsPage.Name = "clientsPage";
-            this.clientsPage.Padding = new System.Windows.Forms.Padding(3);
-            this.clientsPage.Size = new System.Drawing.Size(1064, 648);
+            this.clientsPage.Size = new System.Drawing.Size(1064, 640);
             this.clientsPage.TabIndex = 1;
             this.clientsPage.Text = "Clients";
-            this.clientsPage.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.DimGray;
             this.ClientSize = new System.Drawing.Size(1078, 750);
             this.Controls.Add(this.drawerMenu);
             this.DrawerIsOpen = true;
             this.DrawerShowIconsWhenHidden = true;
             this.DrawerTabControl = this.drawerMenu;
             this.Name = "Form1";
+            this.Sizable = false;
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.drawerMenu.ResumeLayout(false);

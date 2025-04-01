@@ -26,5 +26,10 @@ namespace Clients.View
         {
 
         }
+
+        private void materialComboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

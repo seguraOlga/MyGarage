@@ -16,5 +16,15 @@ namespace MyGarage.View
         {
             InitializeComponent();
         }
+
+        private void materialLabel1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void materialListView1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

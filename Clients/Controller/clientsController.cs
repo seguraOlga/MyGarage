@@ -14,12 +14,23 @@ namespace Clients.Controller
 
         public clientsController()
         {
+            setListeners();
             clientUserController = new clientsUserControl();
+            
+
         }
+
 
         public UserControl GetView()
         {
             return clientUserController;
+        }
+
+
+        private void setListeners()
+        {
+            
+
         }
     }
 }
